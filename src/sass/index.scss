@@ -1,0 +1,59 @@
+@import "./variables";
+@import "./mixins";
+@import "./base";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/hero-slider";
+@import "./components/button";
+@import "./components/section";
+@import "./components/policy-card";
+@import "./components/product-card";
+@import "./components/catalog";
+@import "./components/custom-checkbox";
+@import "./components/product";
+@import "./components/product-view-modal";
+@import "./components/cart";
+.slider {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 400px;
+  padding-top: 1.4em;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+.welcom {
+  /* Добро пожаловать в Cocteil */
+  position: relative;
+
+  height: 114px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  left: 6em;
+  z-index: 1;
+  top: -42px;
+  color: #121212;
+
+  &__p {
+    top: -5em;
+    position: relative;
+    border-bottom: #302b6d 2px solid;
+  }
+}
+.demo {
+  width: 1000px;
+}
+.d {
+  font-size: 2px;
+}
